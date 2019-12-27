@@ -1,0 +1,224 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - CryptoSwift (1.0.0)
+  - Differentiator (4.0.1)
+  - ExpandableLabel (0.5.2)
+  - Firebase/Analytics (6.12.0):
+    - Firebase/Core
+  - Firebase/Core (6.12.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.5)
+  - Firebase/CoreOnly (6.12.0):
+    - FirebaseCore (= 6.3.3)
+  - Firebase/Messaging (6.12.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 4.1.8)
+  - FirebaseAnalytics (6.1.5):
+    - FirebaseCore (~> 6.3)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.5)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseAnalyticsInterop (1.4.0)
+  - FirebaseCore (6.3.3):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnostics (1.1.1):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.1.0)
+  - FirebaseInstanceID (4.2.7):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseMessaging (4.1.8):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.2)
+    - FirebaseInstanceID (~> 4.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Reachability (~> 6.2)
+    - GoogleUtilities/UserDefaults (~> 6.2)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - GoogleAppMeasurement (6.1.5):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (3.0.1)
+  - GoogleDataTransportCCTSupport (1.2.1):
+    - GoogleDataTransport (~> 3.0)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.1)
+  - GoogleUtilities/Logger (6.3.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.1)"
+  - GoogleUtilities/Reachability (6.3.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.3.1):
+    - GoogleUtilities/Logger
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - ObjectMapper (3.5.1)
+  - Protobuf (3.10.0)
+  - RadioGroup (1.3.3):
+    - SweeterSwift
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
+  - Refreshable (1.2.0)
+  - RxAlamofire (5.0.0):
+    - RxAlamofire/Core (= 5.0.0)
+  - RxAlamofire/Core (5.0.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxAppState (1.5.3):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRealm (1.0.0):
+    - RealmSwift (~> 3.14)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxWebKit (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - SweeterSwift (1.0.5)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+  - SWSegmentedControl (2.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - AlamofireObjectMapper (~> 5.2.0)
+  - CryptoSwift (~> 1.0.0)
+  - ExpandableLabel (~> 0.5)
+  - Firebase/Analytics
+  - Firebase/Messaging
+  - RadioGroup (~> 1.3.3)
+  - RealmSwift (~> 3.19.0)
+  - Refreshable (= 1.2.0)
+  - RxAlamofire (~> 5.0.0)
+  - RxAppState (~> 1.5.2)
+  - RxCocoa (~> 5.0.0)
+  - RxDataSources (~> 4.0)
+  - RxRealm (~> 1.0.0)
+  - RxSwift (~> 5.0.0)
+  - RxWebKit (= 1.0.0)
+  - SwiftyRSA (~> 1.5.0)
+  - SWSegmentedControl (~> 2.7.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - CryptoSwift
+    - Differentiator
+    - ExpandableLabel
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - nanopb
+    - ObjectMapper
+    - Protobuf
+    - RadioGroup
+    - Realm
+    - RealmSwift
+    - Refreshable
+    - RxAlamofire
+    - RxAppState
+    - RxCocoa
+    - RxDataSources
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - RxWebKit
+    - SweeterSwift
+    - SwiftyRSA
+    - SWSegmentedControl
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  ExpandableLabel: c2fab6d27860c572d67134b30522a5917746171d
+  Firebase: da031bc7012374e3bed17a6731b89327b29863b9
+  FirebaseAnalytics: 4e53a7eb7b76bc703c4d9239bc964545e9b23361
+  FirebaseAnalyticsInterop: d48b6ab67bcf016a05e55b71fc39c61c0cb6b7f3
+  FirebaseCore: bcd6c112429249d7921e907d661e8955a3549e26
+  FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f
+  FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
+  FirebaseInstanceID: ebd2ea79ee38db0cb5f5167b17a0d387e1cc7b6e
+  FirebaseMessaging: de30f83a372a390be6f2ba44ec43a45b7ccdb43f
+  GoogleAppMeasurement: 037f46d1d8ae8b312720f1042585ab961a1289e3
+  GoogleDataTransport: 166f9b9f82cbf60a204e8fe2daa9db3e3ec1fb15
+  GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
+  GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
+  RadioGroup: b84d3ef8a255f63bc7a601f487b3d32355f9f365
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
+  Refreshable: 0f76b6d198178e6cd2823a553fbf4e84a3dba527
+  RxAlamofire: e7875a012aff55345672d0f70a2a9cd6aeb0f211
+  RxAppState: 04e1ecec6a0c465deb0389b15c3abf3b64ea0469
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRealm: 1e81dcfca1fb50c3e9b3e1f8102bc875c5156a2e
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxWebKit: 9ff7ea0780a093450defc7ff13e218678ebe6e4a
+  SweeterSwift: 2708d1eea926546f8f6e8fea38ac8f5598ff00c7
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  SWSegmentedControl: 808ef4b80d0168799a60d8a2d322cfde7f45f46c
+
+PODFILE CHECKSUM: 6617a178b679b1e0c59380fc7aed13f13e957bb0
+
+COCOAPODS: 1.8.3

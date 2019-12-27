@@ -1,0 +1,11 @@
+/* 
+  Error.strings
+  Customs2Home
+
+  Created by Wittawas Mukdaprasert on 24/10/2562 BE.
+  Copyright © 2562 Wittawas Mukdaprasert. All rights reserved.
+*/
+
+
+"internalError" = "Internal technical error\nPlease contact your Administrator.";
+

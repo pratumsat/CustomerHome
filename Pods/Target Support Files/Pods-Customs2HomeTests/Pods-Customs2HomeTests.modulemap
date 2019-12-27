@@ -1,0 +1,6 @@
+framework module Pods_Customs2HomeTests {
+  umbrella header "Pods-Customs2HomeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Prompt-SemiBold.ttf">
+            <string>Prompt-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StepViewControlller" customModule="Customs2Home" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-9A-M5x">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0li-8M-lfH">
+                            <rect key="frame" x="182" y="25" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="LG3-j5-YQT"/>
+                                <constraint firstAttribute="height" constant="50" id="vUq-Vu-Pgi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="17"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hU-r7-GJd">
+                            <rect key="frame" x="58" y="25" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="mG3-j9-nQx"/>
+                                <constraint firstAttribute="height" constant="50" id="xeX-bt-ewQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="17"/>
+                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj1-kc-Ol3">
+                            <rect key="frame" x="306" y="25" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="CbM-kA-Rdl"/>
+                                <constraint firstAttribute="width" constant="50" id="q0d-Pi-x2I"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="17"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AE8-dw-I3v">
+                            <rect key="frame" x="108" y="48.5" width="74" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="ujz-Ts-hso"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7e-jf-GHH">
+                            <rect key="frame" x="232" y="48.5" width="74" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="D8Z-nw-UPr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Hj1-kc-Ol3" firstAttribute="leading" secondItem="Y7e-jf-GHH" secondAttribute="trailing" id="0Qt-tk-9gH"/>
+                        <constraint firstItem="AE8-dw-I3v" firstAttribute="leading" secondItem="7hU-r7-GJd" secondAttribute="trailing" id="3SV-gb-ZFq"/>
+                        <constraint firstItem="Y7e-jf-GHH" firstAttribute="leading" secondItem="0li-8M-lfH" secondAttribute="trailing" id="4Yd-Ch-Hhk"/>
+                        <constraint firstItem="7hU-r7-GJd" firstAttribute="centerY" secondItem="fe7-9A-M5x" secondAttribute="centerY" id="L1q-0g-GOG"/>
+                        <constraint firstItem="Hj1-kc-Ol3" firstAttribute="centerY" secondItem="fe7-9A-M5x" secondAttribute="centerY" id="OYm-zS-3Yv"/>
+                        <constraint firstItem="0li-8M-lfH" firstAttribute="centerX" secondItem="fe7-9A-M5x" secondAttribute="centerX" id="OzY-sd-jQA"/>
+                        <constraint firstItem="0li-8M-lfH" firstAttribute="centerY" secondItem="fe7-9A-M5x" secondAttribute="centerY" id="RFO-Wp-zZg"/>
+                        <constraint firstAttribute="height" constant="100" id="Vxq-MZ-tXH"/>
+                        <constraint firstItem="0li-8M-lfH" firstAttribute="leading" secondItem="AE8-dw-I3v" secondAttribute="trailing" id="XYT-Tp-Nin"/>
+                        <constraint firstItem="7hU-r7-GJd" firstAttribute="centerX" secondItem="fe7-9A-M5x" secondAttribute="centerX" multiplier="0.4" id="YL7-zC-MfD"/>
+                        <constraint firstItem="Y7e-jf-GHH" firstAttribute="centerY" secondItem="0li-8M-lfH" secondAttribute="centerY" id="hjn-BC-znH"/>
+                        <constraint firstItem="AE8-dw-I3v" firstAttribute="centerY" secondItem="0li-8M-lfH" secondAttribute="centerY" id="jqb-hH-oIi"/>
+                        <constraint firstItem="Hj1-kc-Ol3" firstAttribute="centerX" secondItem="fe7-9A-M5x" secondAttribute="centerX" multiplier="1.6" id="soz-Xr-K4B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fe7-9A-M5x" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="02y-4f-xqM"/>
+                <constraint firstItem="fe7-9A-M5x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="epy-pR-hbd"/>
+                <constraint firstItem="fe7-9A-M5x" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="hiT-58-XZ9"/>
+                <constraint firstItem="fe7-9A-M5x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="seF-ai-xCV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lineRight" destination="Y7e-jf-GHH" id="5ee-1H-i1B"/>
+                <outlet property="lineleft" destination="AE8-dw-I3v" id="QoE-ac-jZm"/>
+                <outlet property="view1" destination="7hU-r7-GJd" id="bpI-LV-pAw"/>
+                <outlet property="view2" destination="0li-8M-lfH" id="i8u-vV-nUB"/>
+                <outlet property="view3" destination="Hj1-kc-Ol3" id="hxg-Ys-P9M"/>
+            </connections>
+            <point key="canvasLocation" x="121.59999999999999" y="-22.488755622188908"/>
+        </view>
+    </objects>
+</document>

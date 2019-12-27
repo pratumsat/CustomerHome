@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ei7-4Q-36q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Prompt-Regular.ttf">
+            <string>Prompt-Regular</string>
+        </array>
+        <array key="Prompt-SemiBold.ttf">
+            <string>Prompt-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ประวัติชำระ-->
+        <scene sceneID="Bzy-ap-ozV">
+            <objects>
+                <navigationController id="ei7-4Q-36q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ประวัติชำระ" image="ic_tab_declare_history_grey" selectedImage="ic_tab_declare_history_green" id="2Xj-ES-1ai"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pnG-An-fMy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eWI-C9-P9A" kind="relationship" relationship="rootViewController" id="thv-VB-MNt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsU-PU-Tw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="60"/>
+        </scene>
+        <!--ประวัติการชำระภาษีอากร-->
+        <scene sceneID="nOe-Su-1cK">
+            <objects>
+                <viewController id="eWI-C9-P9A" customClass="PaymentViewController" customModule="Customs2Home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7p-KN-dRm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_c_2_h" translatesAutoresizingMaskIntoConstraints="NO" id="OWm-Rx-DCQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="788"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-Mz-KZq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabdeclarationcell" rowHeight="246" id="fO5-AT-YD4" customClass="KTableViewCell" customModule="Customs2Home" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="246"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fO5-AT-YD4" id="WCD-2T-RN7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="246"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-Sp-evQ" userLabel="Backgroud View">
+                                                    <rect key="frame" x="20" y="11" width="374" height="224"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-Ag-HbK">
+                                                            <rect key="frame" x="8" y="8" width="358" height="208"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Tw-y1-C1E">
+                                                                    <rect key="frame" x="20" y="20" width="318" height="168"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tWw-W3-bKQ">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="สถานะ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd5-cT-PHk">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-in-2vn">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <attributedString key="attributedText">
+                                                                                        <fragment content="EW877842375TH">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" name="Theme-Color"/>
+                                                                                                <font key="NSFont" size="12" name="Prompt-Regular"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                                <integer key="NSUnderline" value="1"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KQI-NL-ahq">
+                                                                            <rect key="frame" x="0.0" y="28" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="เลขไปรษณีย์ภัณฑ์" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwu-YZ-1Nw">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6H-FH-x9d">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <attributedString key="attributedText">
+                                                                                        <fragment content="EW877842375TH">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" name="Theme-Color"/>
+                                                                                                <font key="NSFont" size="12" name="Prompt-Regular"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                                <integer key="NSUnderline" value="1"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Brm-k3-JLX">
+                                                                            <rect key="frame" x="0.0" y="56" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="เลขอ้างอิงศุลกากร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpA-6p-Y1Z">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="411911000001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-lC-9jM">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <color key="textColor" name="Theme-Color"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-fs-pQk">
+                                                                            <rect key="frame" x="0.0" y="84" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="รวมภาษีอากร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-tq-JUI">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,415.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57B-3z-m5m">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <color key="textColor" name="Theme-Color"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v8l-cM-qVf">
+                                                                            <rect key="frame" x="0.0" y="112" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="วันสำแดงสินค้า" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeS-IO-eJg">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 พฤศจิกายน 2562" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-Eq-42C">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <color key="textColor" name="Theme-Color"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6xz-p7-8PD">
+                                                                            <rect key="frame" x="0.0" y="140" width="318" height="28"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="วันที่ชำระ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-Je-eHy">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 พฤศจิกายน 2562" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6x-aQ-5CM">
+                                                                                    <rect key="frame" x="161.5" y="0.0" width="156.5" height="28"/>
+                                                                                    <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
+                                                                                    <color key="textColor" name="orange-theme"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="8Tw-y1-C1E" secondAttribute="trailing" constant="20" symbolic="YES" id="cYe-49-zwR"/>
+                                                                <constraint firstItem="8Tw-y1-C1E" firstAttribute="top" secondItem="AQJ-Ag-HbK" secondAttribute="top" constant="20" symbolic="YES" id="kHE-tY-f6K"/>
+                                                                <constraint firstItem="8Tw-y1-C1E" firstAttribute="leading" secondItem="AQJ-Ag-HbK" secondAttribute="leading" constant="20" symbolic="YES" id="lHm-la-11M"/>
+                                                                <constraint firstAttribute="bottom" secondItem="8Tw-y1-C1E" secondAttribute="bottom" constant="20" id="oyk-QD-mhj"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                    <real key="value" value="0.20000000000000001"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                    <size key="value" width="0.0" height="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="AQJ-Ag-HbK" secondAttribute="bottom" constant="8" id="FsS-tj-2fb"/>
+                                                        <constraint firstItem="AQJ-Ag-HbK" firstAttribute="top" secondItem="JlP-Sp-evQ" secondAttribute="top" constant="8" id="Syr-33-D3i"/>
+                                                        <constraint firstAttribute="trailing" secondItem="AQJ-Ag-HbK" secondAttribute="trailing" constant="8" id="Wrg-FW-048"/>
+                                                        <constraint firstItem="AQJ-Ag-HbK" firstAttribute="leading" secondItem="JlP-Sp-evQ" secondAttribute="leading" constant="8" id="xHU-Fq-MPg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JlP-Sp-evQ" firstAttribute="top" secondItem="WCD-2T-RN7" secondAttribute="topMargin" id="3Ty-Is-D0u"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JlP-Sp-evQ" secondAttribute="trailing" id="Fkx-xI-60g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JlP-Sp-evQ" secondAttribute="bottom" id="WgJ-i9-f3v"/>
+                                                <constraint firstItem="JlP-Sp-evQ" firstAttribute="leading" secondItem="WCD-2T-RN7" secondAttribute="leadingMargin" id="alO-xW-bdU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="Red-Theme"/>
+                                        <connections>
+                                            <outlet property="attrDetail2Label" destination="EQa-lC-9jM" id="5Sl-B7-XdF"/>
+                                            <outlet property="attrDetail3Label" destination="57B-3z-m5m" id="7sz-J7-c8f"/>
+                                            <outlet property="attrDetail4Label" destination="4vW-Eq-42C" id="zHG-Ss-36E"/>
+                                            <outlet property="attrDetail5Label" destination="w6x-aQ-5CM" id="TaT-0K-mfp"/>
+                                            <outlet property="attrDetailLabel" destination="N6H-FH-x9d" id="L0o-6B-S8J"/>
+                                            <outlet property="detailLabel" destination="fGe-in-2vn" id="g63-Ot-0VF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ไม่มีรายการ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3D-bx-pRS">
+                                <rect key="frame" x="168" y="438.5" width="78" height="19"/>
+                                <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="16"/>
+                                <color key="textColor" name="blue-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2d-Mz-KZq" firstAttribute="top" secondItem="YmY-M4-lZb" secondAttribute="top" id="7i0-Kd-9KZ"/>
+                            <constraint firstItem="K2d-Mz-KZq" firstAttribute="bottom" secondItem="YmY-M4-lZb" secondAttribute="bottom" id="FMt-NY-ENh"/>
+                            <constraint firstItem="K2d-Mz-KZq" firstAttribute="leading" secondItem="YmY-M4-lZb" secondAttribute="leading" id="Gvp-5T-AoO"/>
+                            <constraint firstAttribute="trailing" secondItem="OWm-Rx-DCQ" secondAttribute="trailing" id="LHf-mC-TT7"/>
+                            <constraint firstItem="YmY-M4-lZb" firstAttribute="trailing" secondItem="K2d-Mz-KZq" secondAttribute="trailing" id="OVN-n8-Ain"/>
+                            <constraint firstItem="OWm-Rx-DCQ" firstAttribute="top" secondItem="YmY-M4-lZb" secondAttribute="top" id="cot-U1-Mp6"/>
+                            <constraint firstItem="u3D-bx-pRS" firstAttribute="centerX" secondItem="t7p-KN-dRm" secondAttribute="centerX" id="hnn-df-sEn"/>
+                            <constraint firstItem="OWm-Rx-DCQ" firstAttribute="leading" secondItem="t7p-KN-dRm" secondAttribute="leading" id="ky1-0r-wf1"/>
+                            <constraint firstItem="u3D-bx-pRS" firstAttribute="centerY" secondItem="t7p-KN-dRm" secondAttribute="centerY" id="ptb-cu-flP"/>
+                            <constraint firstAttribute="bottom" secondItem="OWm-Rx-DCQ" secondAttribute="bottom" constant="20" symbolic="YES" id="yOA-fP-P2M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YmY-M4-lZb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ประวัติการชำระภาษีอากร" id="aGA-Wg-OIe"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="isShowBottomBar">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="noItemLabel" destination="u3D-bx-pRS" id="8ja-eD-zrT"/>
+                        <outlet property="tableView" destination="K2d-Mz-KZq" id="dPG-DW-xSj"/>
+                        <segue destination="4q9-pf-Cjz" kind="show" identifier="showPaymentDetail" id="keQ-2L-Qqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebf-QR-HL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="60"/>
+        </scene>
+        <!--ผลการชำระเงิน-->
+        <scene sceneID="14q-AN-AcF">
+            <objects>
+                <viewController id="4q9-pf-Cjz" customClass="PaymentDetailViewController" customModule="Customs2Home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cvm-iZ-5RL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jk-n0-wqo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="878"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-nP-IGc">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="765"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-nj-Xd9">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="765"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85E-vV-eHV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="180"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_complete" translatesAutoresizingMaskIntoConstraints="NO" id="6nN-ID-dUM">
+                                                                <rect key="frame" x="136" y="24" width="110" height="80"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="110" id="Y9k-o9-5nc"/>
+                                                                    <constraint firstAttribute="height" constant="80" id="yHY-iJ-cpx"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชำระเงินเรียบร้อย" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNf-wZ-36F">
+                                                                <rect key="frame" x="46" y="112" width="290" height="27"/>
+                                                                <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="23"/>
+                                                                <color key="textColor" name="Theme-Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เอกสารยืนยันการทำรายการสำเร็จ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky6-zI-Knk">
+                                                                <rect key="frame" x="16" y="139" width="350" height="19"/>
+                                                                <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="16"/>
+                                                                <color key="textColor" name="blue-grey"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="sNf-wZ-36F" secondAttribute="trailing" constant="46" id="0so-SZ-cGp"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ky6-zI-Knk" secondAttribute="trailing" constant="16" id="DTJ-Ej-PNh"/>
+                                                            <constraint firstItem="ky6-zI-Knk" firstAttribute="leading" secondItem="85E-vV-eHV" secondAttribute="leading" constant="16" id="Dpu-Xh-faI"/>
+                                                            <constraint firstItem="ky6-zI-Knk" firstAttribute="top" secondItem="sNf-wZ-36F" secondAttribute="bottom" id="NUR-VZ-iuy"/>
+                                                            <constraint firstItem="6nN-ID-dUM" firstAttribute="centerX" secondItem="85E-vV-eHV" secondAttribute="centerX" id="OA7-Ey-KNG"/>
+                                                            <constraint firstItem="6nN-ID-dUM" firstAttribute="top" secondItem="85E-vV-eHV" secondAttribute="top" constant="24" id="cCj-qO-jZR"/>
+                                                            <constraint firstItem="sNf-wZ-36F" firstAttribute="top" secondItem="6nN-ID-dUM" secondAttribute="bottom" constant="8" id="dma-Qb-yE5"/>
+                                                            <constraint firstItem="sNf-wZ-36F" firstAttribute="leading" secondItem="85E-vV-eHV" secondAttribute="leading" constant="46" id="nbs-ZF-DnC"/>
+                                                            <constraint firstAttribute="height" constant="180" id="wgG-Ph-j4m"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลขอ้างอิง/รายการศุลกากร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epv-1w-cQk">
+                                                        <rect key="frame" x="0.0" y="180" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="4Mu-MW-YKK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-EI-qIz">
+                                                        <rect key="frame" x="0.0" y="210" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="vyP-j1-Wdh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หมายเลขไปรษณีย์ภัณฑ์" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAA-Od-67O">
+                                                        <rect key="frame" x="0.0" y="250" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="lec-r6-86g"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIG-bs-UYR">
+                                                        <rect key="frame" x="0.0" y="280" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="aBq-uM-iKw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อผู้ทำรายการ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-Yv-0D0">
+                                                        <rect key="frame" x="0.0" y="320" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="5Fa-79-Wcp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ys-mf-CXu">
+                                                        <rect key="frame" x="0.0" y="350" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="KdT-ze-Nv9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่ชำระเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVR-A0-Yq7">
+                                                        <rect key="frame" x="0.0" y="390" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="wJy-R7-Vie"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPB-Wl-UkP">
+                                                        <rect key="frame" x="0.0" y="420" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="B7g-bM-J5q"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTL-7L-W2g">
+                                                        <rect key="frame" x="0.0" y="460" width="382" height="16"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="xzf-Xm-axd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายละเอียดค่าภาษีอากร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI5-Mz-qMK">
+                                                        <rect key="frame" x="0.0" y="476" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="ChO-3X-Wol"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <color key="textColor" name="Theme-Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อากรขาเข้า" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7M-zv-UAq">
+                                                        <rect key="frame" x="0.0" y="506" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="aEn-54-dlV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5D-FZ-KKq">
+                                                        <rect key="frame" x="0.0" y="536" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ag7-09-aKa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ภาษีมูลค่าเพิ่ม" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3G-BA-v8M">
+                                                        <rect key="frame" x="0.0" y="576" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="uqA-J7-B8Y"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PfY-2Q-Qsy">
+                                                        <rect key="frame" x="0.0" y="606" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="O0f-KQ-KUV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รวมภาษีอากรทั้งสิ้น" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-6J-Eq3">
+                                                        <rect key="frame" x="0.0" y="646" width="382" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="0YF-nm-2Mr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-Lc-c0J">
+                                                        <rect key="frame" x="0.0" y="676" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Nzu-Wu-JKR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="border-color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uut-Gs-Aab">
+                                                        <rect key="frame" x="0.0" y="716" width="382" height="16"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="D19-dg-5Af"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หมายเหตุ : เอกสารฉบับนี้เป็นเอกสารยืนยันการทำรายการสำเร็จไม่ใช้ใบเสร็จรับเงินตามกฏหมายศุลกากร" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO3-PR-hBB">
+                                                        <rect key="frame" x="0.0" y="732" width="382" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="14"/>
+                                                        <color key="textColor" name="blue-grey"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Cpt-nj-Xd9" firstAttribute="leading" secondItem="hJ8-nP-IGc" secondAttribute="leading" id="29r-XF-6MA"/>
+                                            <constraint firstItem="Cpt-nj-Xd9" firstAttribute="top" secondItem="hJ8-nP-IGc" secondAttribute="top" id="5FQ-sw-9if"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cpt-nj-Xd9" secondAttribute="trailing" id="QFt-Dt-XTV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cpt-nj-Xd9" secondAttribute="bottom" id="mkC-xi-2hf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hJ8-nP-IGc" firstAttribute="top" secondItem="6Jk-n0-wqo" secondAttribute="top" id="EyF-Dp-dT0"/>
+                                    <constraint firstAttribute="bottom" secondItem="hJ8-nP-IGc" secondAttribute="bottom" constant="20" id="F38-Hb-pkw"/>
+                                    <constraint firstItem="hJ8-nP-IGc" firstAttribute="leading" secondItem="6Jk-n0-wqo" secondAttribute="leading" constant="16" id="VAZ-vC-QoR"/>
+                                    <constraint firstItem="hJ8-nP-IGc" firstAttribute="centerX" secondItem="6Jk-n0-wqo" secondAttribute="centerX" id="amT-zA-7ZB"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJ8-nP-IGc" secondAttribute="trailing" constant="16" id="gyc-iO-6Zq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xDj-I7-Bj5" firstAttribute="trailing" secondItem="6Jk-n0-wqo" secondAttribute="trailing" id="1P1-J7-oeA"/>
+                            <constraint firstItem="6Jk-n0-wqo" firstAttribute="top" secondItem="xDj-I7-Bj5" secondAttribute="top" id="5Zh-dV-erX"/>
+                            <constraint firstItem="xDj-I7-Bj5" firstAttribute="bottom" secondItem="6Jk-n0-wqo" secondAttribute="bottom" id="9gk-zC-WqN"/>
+                            <constraint firstItem="6Jk-n0-wqo" firstAttribute="leading" secondItem="xDj-I7-Bj5" secondAttribute="leading" id="aeI-UC-JY1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xDj-I7-Bj5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ผลการชำระเงิน" id="FF6-QS-OTY"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="isShowBottomBar">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRf-TD-Tyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_c_2_h" width="480" height="912"/>
+        <image name="ic_complete" width="80" height="80"/>
+        <image name="ic_tab_declare_history_green" width="28" height="20"/>
+        <image name="ic_tab_declare_history_grey" width="28" height="20"/>
+        <namedColor name="Red-Theme">
+            <color red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Theme-Color">
+            <color red="0.3411764705882353" green="0.65098039215686276" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Theme-Color">
+            <color red="0.3411764705882353" green="0.65098039215686276" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-grey">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.84700000286102295" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="border-color">
+            <color red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange-theme">
+            <color red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="Theme-Color"/>
+</document>
